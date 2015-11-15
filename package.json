@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "node_modules/.bin/eslint **/*.js",
     "test": "echo 'TODO' && exit 1",
+    "transpile": "node_modules/.bin/tsc -p src --outDir dist",
     "start": "node_modules/.bin/nodemon server.js"
   },
   "author": "Ben Paddock <pads@thisispads.me.uk> (https://benpaddock.net)",

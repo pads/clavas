@@ -10,8 +10,8 @@ server.use(route.get("/", function* serveIndexPage() {
     yield send(this, "/public/index.html");
 }));
 
-server.use(route.get("/client.ts", function* serveClient() {
-    yield send(this, "client.ts");
+server.use(route.get("/client.js", function* serveClient() {
+    yield send(this, "/dist/client.js");
 }));
 
 server.use(function* serveLibs() {
