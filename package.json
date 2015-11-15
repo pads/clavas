@@ -4,7 +4,7 @@
   "description": "Latin for Spike",
   "main": "server.js",
   "scripts": {
-    "lint": "node_modules/.bin/eslint **/*.js",
+    "eslint": "node_modules/.bin/eslint server.js",
     "test": "echo 'TODO' && exit 1",
     "transpile": "node_modules/.bin/tsc -p src --outDir dist",
     "start": "node_modules/.bin/nodemon server.js"
@@ -21,7 +21,9 @@
   },
   "devDependencies": {
     "eslint": "^1.9.0",
-    "typescript": "^1.6.2",
-    "nodemon": "^1.8.1"
+    "nodemon": "^1.8.1",
+    "tslint": "^2.5.1",
+    "tslint-eslint-rules": "^0.2.3",
+    "typescript": "^1.6.2"
   }
 }
